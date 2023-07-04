@@ -20,7 +20,7 @@ for( let i = 1; i <= 100; i++){
     }
 
     if (i % 3 === 0 && i % 5 === 0) {
-        boxContainer.innerHTML = ("FizzBuzz");
+        boxContainer.innerHTML = ("Fizz Buzz");
         boxContainer.classList.add("bg-danger")       
     }
 
