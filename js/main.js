@@ -11,12 +11,7 @@ for( let i = 1; i <= 100; i++){
 
     if (i % 3 === 0){
         boxContainer.innerHTML = ("Fizz");
-        if (i % 5 === 0) {
-            boxContainer.innerHTML = ("Fizz Buzz");
-            boxContainer.classList.add("bg-danger") 
-        } else {
-            boxContainer.classList.add("bg-warning");
-        }
+        boxContainer.classList.add("bg-warning");
     } 
 
     if (i % 5 === 0){
@@ -24,9 +19,9 @@ for( let i = 1; i <= 100; i++){
         boxContainer.classList.add("bg-success")
     }
 
-    // if (i % 3 === 0 && i % 5 === 0) {
-    //     boxContainer.innerHTML = ("Fizz Buzz");
-    //     boxContainer.classList.add("bg-danger")       
-    // }
+    if (i % 3 === 0 && i % 5 === 0) {
+        boxContainer.innerHTML = ("Fizz Buzz");
+        boxContainer.classList.add("bg-danger")       
+    }
 
 }
