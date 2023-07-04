@@ -12,20 +12,39 @@ for( let i = 1; i <= 100; i++){
 //innerhtml box   
     boxContainer.innerHTML = (i);
 
-//if senza indentazione
-    if (i % 3 === 0){
-        boxContainer.innerHTML = ("Fizz");
-        boxContainer.classList.add("bg-warning");
-    } 
 
-    if (i % 5 === 0){
+// if con indentazione
+    if(i % 3 ===0){
+        if (i % 5 === 0){
+            boxContainer.innerHTML = ("Fizz Buzz");
+            boxContainer.classList.add("bg-danger") 
+        } else {
+            boxContainer.innerHTML = ("Fizz");
+            boxContainer.classList.add("bg-warning");
+        } 
+    } else if ( i % 5 === 0){
         boxContainer.innerHTML = ("Buzz");
         boxContainer.classList.add("bg-success")
     }
 
-    if (i % 3 === 0 && i % 5 === 0) {
-        boxContainer.innerHTML = ("Fizz Buzz");
-        boxContainer.classList.add("bg-danger")       
-    }
+
+
+
+
+//if senza indentazione
+    // if (i % 3 === 0){
+    //     boxContainer.innerHTML = ("Fizz");
+    //     boxContainer.classList.add("bg-warning");
+    // } 
+
+    // if (i % 5 === 0){
+    //     boxContainer.innerHTML = ("Buzz");
+    //     boxContainer.classList.add("bg-success")
+    // }
+
+    // if (i % 3 === 0 && i % 5 === 0) {
+    //     boxContainer.innerHTML = ("Fizz Buzz");
+    //     boxContainer.classList.add("bg-danger")       
+    // }
 
 }
