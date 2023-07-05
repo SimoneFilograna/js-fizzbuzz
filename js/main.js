@@ -26,11 +26,7 @@ for( let i = 1; i <= 100; i++){
         boxContainer.innerHTML = ("Buzz");
         boxContainer.classList.add("bg-success")
     }
-
-
-
-
-
+    
 //if senza indentazione
     // if (i % 3 === 0){
     //     boxContainer.innerHTML = ("Fizz");
