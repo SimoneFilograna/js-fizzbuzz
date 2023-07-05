@@ -10,10 +10,10 @@ for( let i = 1; i <= 100; i++){
     boxContainer.classList.add("box", "text-center", "border", "d-flex","justify-content-center", "align-items-center", "fw-semibold", "fs-5", "bg-primary");
     mainContainer.append(boxContainer);
 //innerhtml box   
-    boxContainer.innerHTML = (i);
+    boxContainer.innerHTML = i;
 
 
-// if con indentazione
+// if con nest
     if(i % 3 ===0){
         if (i % 5 === 0){
             boxContainer.innerHTML = ("Fizz Buzz");
@@ -27,7 +27,7 @@ for( let i = 1; i <= 100; i++){
         boxContainer.classList.add("bg-success")
     }
     
-//if senza indentazione
+//if senza nest
     // if (i % 3 === 0){
     //     boxContainer.innerHTML = ("Fizz");
     //     boxContainer.classList.add("bg-warning");
@@ -42,5 +42,7 @@ for( let i = 1; i <= 100; i++){
     //     boxContainer.innerHTML = ("Fizz Buzz");
     //     boxContainer.classList.add("bg-danger")       
     // }
+
+    //rimuovere altri bg se si vuole usare questo metodo per % 3 and 5
 
 }
